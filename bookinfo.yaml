@@ -398,7 +398,7 @@ spec:
         image: docker.io/istio/examples-bookinfo-productpage-v1:1.16.4
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 9080
+        - containerPort: 8080
         volumeMounts:
         - name: tmp
           mountPath: /tmp
