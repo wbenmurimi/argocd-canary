@@ -405,7 +405,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: argoproj/rollouts-demo:orange
+        image: argoproj/rollouts-demo:blue
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
