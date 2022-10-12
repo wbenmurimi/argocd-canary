@@ -294,7 +294,7 @@ metadata:
     service: productpage
 spec:
   ports:
-  - port: 9080
+  - port: 8080
     name: http
   selector:
     app: productpage
@@ -308,7 +308,7 @@ metadata:
     service: productpage
 spec:
   ports:
-  - port: 9080
+  - port: 8080
     name: http
   selector:
     app: productpage
@@ -395,7 +395,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: docker.io/istio/examples-bookinfo-productpage-v1:1.16.4
+        image: argoproj/rollouts-demo:orange
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
