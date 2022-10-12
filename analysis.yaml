@@ -9,7 +9,7 @@ spec:
   - name: success-rate
     successCondition: result[0] >= 0.95
     interval: 30s
-    failureLimit: 1
+    failureLimit: 5
     provider:
       prometheus:
         address: http://prometheus.istio-system.svc.cluster.local:9090
