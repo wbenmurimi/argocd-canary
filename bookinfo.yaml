@@ -365,6 +365,15 @@ metadata:
 spec:
   strategy:
     canary:
+      templates:
+        # name of AnalysisTemplate
+      - templateName: success-rate
+        # When it begins (after the 1-minute pause)
+        startingStep: 2
+        args:
+        - name: service-name
+          # name of the canary service (used in prometheus to find the correct metrics)
+          value: productpage-canary.default.svc.cluster.local
       steps:
       - setWeight: 20
       - pause:
